@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #343a40;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ffc107 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #brokers {
+            padding: 20px;
+            margin-top: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        #brokers h2 {
+            margin-top: 0;
+        }
+        .broker {
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .broker:last-child {
+            border: none;
+        }
+        #add-broker {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        #add-broker h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            background: #343a40;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+.form-group img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Broker Directory</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#brokers">Brokers</a></li>
+                    <li><a href="#add-broker">Add Broker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to the Agent Directory</h1>
+            <p>Find and connect with trusted Agents</p>
+            <h3>join us everywhere </h3>
+            <h5>Contact Us</h5>
+              <p>Email: support@paxavol.com</p>
+              <p>Phone: 9801921557</p>
+              <p>Address: Brevery hills,california, United states</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="brokers">
+            <h2>Existing Brokers</h2>
+            <div class="broker">
+                <h3>Broker Name</h3>
+                <p>Contact: 9801921557</p>
+                <p>Services: Real Estate, Investments</p>
+            </div>
+            <div class="broker">
+                <h3>Broker Name</h3>
+                <p>Contact: broker@example.com</p>
+                <p>Services: Insurance, Financial Planning</p>
+            </div>
+        </section>
+
+        <section id="add-broker">
+            <h2>Add a New Broker</h2>
+            <form action="/add-broker" method="POST">
+                <div class="form-group">
+                    <label for="name">Broker Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="services">Services Offered</label>
+                    <textarea id="services" name="services" rows="5" required></textarea>
+                   
+                </div>
+                <div class="form-group">
+                    <label for="image">Broker Image</label>
+                    <input type="file" id="image" name="image" accept="image/*" style="height:15vh;width:30%">
+                    
+                </div>
+                <div class="form-group">
+                    <button type="submit">Add Broker</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

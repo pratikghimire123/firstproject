@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="Stylesheet" href="my.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <img  style="height: 10vh; width: auto; display: inline;" src="companylogo.png" alt="Logo" srcset="">
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Agents.html">Agents</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Rentalslides.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rental sides
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">House</a>
+                <a class="dropdown-item" href="#">cars</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="broker.html">Brokers <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+              </li>
+              <li class="nav-item">
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            
+              
+          </div>
+          
+          </form>
+        </div>
+       
+        <div class="buttons">
+        <button type="button" class="btn btn-primary"style="margin-right:3px">login</button>
+<button type="button" class="btn btn-secondary"style="background-color:gray;margin-left:27px">Signup</button></div>
+    </nav>
+      <!-- <div class="paragraph"style="float:right;width:50%;margin-top:55px;">
+  <p>Paxavol is a cutting-edge real estate application designed to streamline the property buying, selling, and renting process.
+   With its intuitive interface and robust features, Paxavol caters to both property seekers and real estate professionals. 
+   Users can easily browse through a comprehensive database of listings, complete with high-quality images, detailed descriptions,
+   and virtual tours. Advanced searchfilters allow for precise property matching based on location, price range, amenities,
+    and other preferences.For sellers and landlords, Paxavol offers powerful tools to create and manage listings, track inquiries, and
+    communicate with potential buyers or renters.<! -- --  The app also provides market insights and analytics to help users 
+    make informed decisions. With secure, integrated payment options and document management, Paxavol ensures a 
+    seamless and efficient real estate experience.Whether you are looking to find your dream home, sell a property,
+     or rent out a space, Paxavol is your go-to platform for all your real estate needs.</p></div>-->
+     <img id="slide" src="" alt="Slideshow" style=" position:absolute;">
+     <div class="slidebtn">
+  <button class="slidebtn" id="prev-btn" style="position:absolute;margin-top:60%;margin-left:50%;padding:12px">Prev</button>
+  <button class="slidebtn" id="next-btn" style="position:absolute;margin-top:60%;margin-left:55%;padding:12px">Next </button></div>
+     <script src="slide.js">
+
+     </script>
+     <img name="slide" style=" background-repeat: no-repeat; background-size: center center;" id='slide'width="100%" height="20%">
+</div>
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <h5 style="margin:0px;">About Us</h5>
+              <p>Paxavol is a cutting-edge real estate application designed to streamline the property buying, selling, and renting process With its intuitive interface and robust features, Paxavol caters to both property seekers and real estate professionals. 
+Users can easily browse through a comprehensive database of listings, complete with high-quality images, detailed descriptions,and virtual tours. Advanced searchfilters allow for precise property matching based on location, price range, amenities,and other preferences.For sellers and landlords, Paxavol offers powerful tools to create and manage listings, track inquiries, andcommunicate with potential buyers or renters.</p>
+          </div>
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Agents</a></li>
+                  <li><a href="#">Rental Sides</a></li>
+                  <li><a href="#">Brokers</a></li>
+                  <li><a href="#">Help</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p>Email: support@paxavol.com</p>
+              <p>Phone: 9801921557</p>
+              <p>Address: Brevery hills,california, United states</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 text-center">
+              <p>&copy; 2024 Paxavol. All Rights Reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>

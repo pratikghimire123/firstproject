@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2em 0;
+}
+
+#upload-form, #listings {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a252f;
+}
+
+#listings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.listing {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listing img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.listing h3 {
+    margin: 1em;
+    color: #2c3e50;
+}
+
+.listing p {
+    margin: 0 1em 1em 1em;
+}
+
+.listing strong {
+    color: #2c3e50;
+}

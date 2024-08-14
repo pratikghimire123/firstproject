@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Stylesheet" href="my.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Broker Directory Help</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="brokers">Brokers</a></li>
+                    <li><a href="/add-broker">Add Broker</a></li>
+                    <li><a href="/help">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="help">
+            <h2>Help & Support</h2>
+            
+            <div class="section">
+                <h3>Introduction</h3>
+                <p>Welcome to the help section. Here you will find answers to common questions and guides on how to use the Broker Directory.</p>
+                <p>If you need further assistance, please contact our support team.</p>
+            </div>
+
+            <div class="section">
+                <h3>How to Use the Broker Directory</h3>
+                <ul>
+                    <li><strong>Viewing Brokers:</strong> Navigate to the 'Brokers' section to browse and search for brokers.</li>
+                    <li><strong>Adding a Broker:</strong> Go to the 'Add Broker' section and fill out the form with the required information.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Frequently Asked Questions (FAQ)</h3>
+                <ul>
+                    <li><strong>How do I create an account?</strong> You can create an account by clicking on the 'Sign Up' button on the home page and filling out the registration form.</li>
+                    <li><strong>What information is required to add a broker?</strong> You need to provide the broker's name, contact email, and a description of the services offered.</li>
+                    <li><strong>Can I edit broker information after submission?</strong> Yes, you can edit the information by logging into your account and navigating to the broker's profile.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Troubleshooting</h3>
+                <ul>
+                    <li><strong>Form Submission Issues:</strong> Ensure all required fields are filled out correctly. Check for any error messages next to the form fields.</li>
+                    <li><strong>Profile Editing:</strong> If you cannot edit a profile, ensure you are logged in and have the necessary permissions.</li>
+                    <li><strong>Common Errors:</strong> Refer to our FAQ section for common errors and their solutions. If the problem persists, contact support.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="section contact-form">
+                <h3>Contact Support</h3>
+                <form action="/contact-support" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" style="background-color:#01172c">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
